@@ -19,13 +19,13 @@ public class ProductInfoRepositoryTest extends SellApplicationTests {
     public void save() {
         ProductInfo productInfo = new ProductInfo();
         productInfo.setProductId(StringUtils.uuid());
-        productInfo.setCategoryType(2);
+        productInfo.setCategoryType(3);
         productInfo.setProductDescription("");
-        productInfo.setProductIcon("https://360buy.img");
-        productInfo.setProductName("Apple iPhone 11 Pro 512G Black");
-        productInfo.setProductPrice(new BigDecimal(22.4));
+        productInfo.setProductIcon("https://xxxxx.jpg");
+        productInfo.setProductName("猪脚饭");
+        productInfo.setProductPrice(new BigDecimal(18));
         productInfo.setProductStatus(0);
-        productInfo.setProductStock(10);
+        productInfo.setProductStock(12);
 
         productInfo = productInfoRepository.save(productInfo);
 
