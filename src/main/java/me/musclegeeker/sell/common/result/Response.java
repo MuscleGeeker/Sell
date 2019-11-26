@@ -28,8 +28,8 @@ public class Response {
      * @param <T>
      * @return
      */
-    public static <T> ResultVO OK(T t) {
-        ResultVO result = new ResultVO();
+    public static <T> ResultVO<T> OK(T t) {
+        ResultVO<T> result = new ResultVO<>();
         result.setCode(OK);
         result.setSuccess(Boolean.TRUE);
         result.setMessage(OK_MESSAGE);
@@ -45,8 +45,8 @@ public class Response {
      * @param <T>
      * @return
      */
-    public static <T> ResultVO ERROR(int errorCode, String message) {
-        ResultVO result = new ResultVO();
+    public static <T> ResultVO<T> ERROR(int errorCode, String message) {
+        ResultVO<T> result = new ResultVO<>();
         result.setCode(errorCode);
         result.setSuccess(Boolean.FALSE);
         result.setMessage(message);
